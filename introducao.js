@@ -98,10 +98,25 @@ const pedro = {nome:'pedro', idade:22, data_nascimento:'22/12/2010'}
 
 const usuarios = [maria, jose, pedro]
 
-console.log(usuarios[0].nome, usuarios[0].data_nascimento)
+//console.log(usuarios[0].nome, usuarios[0].data_nascimento)
 
 usuarios.map(user => console.log(user.nome, user.idade))
 
+const veiculos = [
+    {id: 1, categoria: 'esportivo', nome: 'BMW'},
+    {id: 2, categoria: 'esportivo', nome: 'Ferrari'},
+    {id: 3, categoria: 'utilitario', nome: 'Pick-up'}
+
+]
+
+const filtrados = veiculos.filter(v => v.categoria === 'esportivo')
+.map(r => r.nome)
+console.log(filtrados)
+
+const numbers = [1,2,3]
+
+const duplicados = numbers.map(n => n * 2)
+console.log(duplicados)
 
 
 
