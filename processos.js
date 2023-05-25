@@ -75,4 +75,4 @@ function buscarCep(cep){
     .then(resposta => console.log(resposta))
 }
 
-buscarCep("58910000")a
+buscarCep("58910000")
