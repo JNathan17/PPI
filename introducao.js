@@ -64,23 +64,23 @@
 //console.log(numeros.length)
 
 const valores = [{nome: 'Jose'}, true, 5, 'Maria', 5.5, null]
-console.log(valores)
+//console.log(valores)
 //console.log(valores[0].nome, valores[0].idade)
 valores.pop()//remove o ultimo
-console.log(valores)
+//console.log(valores)
 delete valores[3]
-console.log(valores)
-console.log(typeof(valores))
+//console.log(valores)
+//console.log(typeof(valores))
 
 const nomes = ['Jose','Maria','Joao']
 nomes.map(index => console.log(index))
 
 for(let nome of nomes){
-    console.log(nome)
+  //  console.log(nome)
 }
 
 for(let nome in nomes){
-console.log(nome)
+//console.log(nome)
 }
 
 let pessoas =[
@@ -111,12 +111,12 @@ const veiculos = [
 
 const filtrados = veiculos.filter(v => v.categoria === 'esportivo')
 .map(r => r.nome)
-console.log(filtrados)
+//console.log(filtrados)
 
 const numbers = [1,2,3]
 
 const duplicados = numbers.map(n => n * 2)
-console.log(duplicados)
+//console.log(duplicados)
 
 
 

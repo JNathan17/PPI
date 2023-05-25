@@ -12,4 +12,4 @@ celular.preco = 5000
 //console.log(celular)
 
 let nome = ''
-console.log(nome)
+//console.log(nome)
