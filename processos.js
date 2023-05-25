@@ -68,11 +68,30 @@ function calcularValor(numero){
 
 // http://viacep.com.br/ws/01001000/json/
 
-const fetch = require("node-fetch")
+//const fetch = require("node-fetch")
 
-function buscarCep(cep){
-    return fetch(`http://viacep.com.br/ws/${cep}/json/`)
-    .then(resposta => console.log(resposta))
+import fetch from "node-fetch"
+
+//function buscarCep(cep){
+//  fetch(`http://viacep.com.br/ws/${cep}/json/`)
+//  .then(resposta => resposta)
+//  .then(resultado => resultado.json())
+//  .then(qualquer => console.log(qualquer))
+//  .then(qualquer => console.log(qualquer.localidade,cep))
+//  .catch(erro => console.log("CEP INVALIDO", erro.json))
+
+//}
+
+//buscarCep("58910000")
+
+async function buscarCep(cep){
+  let response = await fetch(`http://viacep.com.br/ws/${cep}/json/`)
+  let resultado = await response.json()
+  return resultado
 }
 
 buscarCep("58910000")
+.then(resultado => console.log(resultado.localidade))
+.catch(erro => console.log("ERRO!!!"))
+
+
